@@ -1,147 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Desconto Jogos Clássicos</title>
-<style>
-  /* Reset básico */
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #000;
-    color: #fff;
-    line-height: 1.5;
-  }
-  .container {
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
-  }
-  header {
-    text-align: center;
-    padding: 40px 20px;
-  }
-  header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    color: #ffcc00;
-  }
-  header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  .btn-primary {
-    background: #ffcc00;
-    color: #000;
-    padding: 15px 30px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .platforms {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 40px 0;
-  }
-  .platforms div {
-    text-align: center;
-    max-width: 100px;
-  }
-  .platforms img {
-    max-width: 60px;
-    margin-bottom: 10px;
-  }
-  .benefits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 25px;
-    margin: 40px 0;
-  }
-  .benefit {
-    background: #111;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  .benefit h3 {
-    margin-bottom: 15px;
-    color: #ffcc00;
-  }
-  .price-section {
-    background: #222;
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 10px;
-  }
-  .price-section .old-price {
-    text-decoration: line-through;
-    color: #888;
-    font-size: 1.2rem;
-  }
-  .price-section .new-price {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #ffcc00;
-    margin: 15px 0;
-  }
-  .faq {
-    margin: 50px 0;
-  }
-  .faq h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #ffcc00;
-  }
-  .faq-item {
-    margin-bottom: 20px;
-  }
-  .faq-item h4 {
-    cursor: pointer;
-    background: #111;
-    padding: 15px 20px;
-    border-radius: 6px;
-  }
-  .faq-item p {
-    background: #222;
-    padding: 15px 20px;
-    border-radius: 0 0 6px 6px;
-    display: none;
-    color: #ddd;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #666;
-  }
-  /* Toggle FAQ */
-  .faq-item.active p {
-    display: block;
-  }
-  /* Responsive */
-  @media (max-width: 600px) {
-    .platforms {
-      flex-wrap: wrap;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Mil Jogos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos do novo bloco */
+    .jogar-controle {
+      text-align: center;
+      padding: 40px 20px;
+      background: #f8f8f8;
     }
-  }
-</style>
+    .jogar-controle h1 {
+      font-size: 28px;
+      font-weight: 900;
+      color: #3db4e5;
+      margin-bottom: 10px;
+    }
+    .jogar-controle p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .grid-imagens {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto 30px;
+    }
+    .grid-imagens img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+    .btn-verde {
+      display: inline-block;
+      background: linear-gradient(90deg, #00d941, #00a83d);
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .btn-verde:hover {
+      background: linear-gradient(90deg, #00f94a, #00c746);
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-  <header>
-    <h1>DESFRUTE DE TODA A NOSTALGIA DA SUA INFANCIA</h1>
-    <p>Mais de 10 mil jogos clássicos disponíveis para você jogar em qualquer dispositivo.</p>
-    <a href="#comprar" class="btn-primary">Quero 10 Mil Jogos</a>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Desfrute de toda a nostalgia da sua infância</h1>
+      <p>Mais de 10 mil jogos clássicos disponíveis para você jogar em qualquer dispositivo.</p>
+      <a href="#comprar" class="btn-primary">Quero 10 Mil Jogos</a>
+    </header>
+  </div>
 
   <section class="platforms" aria-label="Plataformas compatíveis">
     <div>
@@ -156,9 +74,17 @@
       <img src="https://img.icons8.com/ios-filled/50/ffcc00/tv.png" alt="TV Android" />
       <p>TV Android</p>
     </div>
-   <div>
-  <!-- Ícone removido -->
-</div>
+  </section>
+
+  <!-- Novo bloco -->
+  <section class="jogar-controle">
+    <h1>JOGUE NA TELA OU COM UM CONTROLE</h1>
+    <p>Configure qualquer controle no seu Celular, Computador ou TV para uma experiência completa!</p>
+    <div class="grid-imagens">
+      <img src="img/jogos1.jpg" alt="Jogos no celular com controle">
+      <img src="img/jogos2.jpg" alt="Jogos no celular com controle">
+    </div>
+    <a href="#" class="btn-verde">DESBLOQUEAR 10 MIL JOGOS</a>
   </section>
 
   <section class="benefits" aria-label="Benefícios">
@@ -171,55 +97,12 @@
       <p>Mais de 10 mil títulos clássicos de diversas plataformas.</p>
     </div>
     <div class="benefit">
-      <h3>Save State</h3>
+      <h3>Salve States</h3>
       <p>Salve seu progresso e continue quando quiser.</p>
     </div>
   </section>
 
-  <section class="price-section" id="comprar">
-    <p class="old-price">De R$97,00</p>
-    <p class="new-price">Por apenas R$17,00</p>
-    <a href="https://pagamento.exemplo.com/checkout" class="btn-primary">Comprar Agora</a>
-    <p style="margin-top: 10px; font-size: 0.9rem; color: #aaa;">Garantia de 14 dias ou seu dinheiro de volta</p>
-  </section>
-
-  <section class="faq" aria-label="Perguntas frequentes">
-    <h2>Dúvidas Frequentes</h2>
-
-    <div class="faq-item">
-      <h4>Como recebo o acesso após a compra?</h4>
-      <p>Você recebe um e-mail com os dados de login e instruções para acessar a plataforma imediatamente.</p>
-    </div>
-
-    <div class="faq-item">
-      <h4>Quais dispositivos posso usar para jogar?</h4>
-      <p>Computador, celular, TV Android, PlayStation e muito mais. Jogue onde quiser!</p>
-    </div>
-
-    <div class="faq-item">
-      <h4>Posso pedir reembolso?</h4>
-      <p>Sim, oferecemos garantia de 14 dias. Se não ficar satisfeito, devolvemos seu dinheiro.</p>
-    </div>
-  </section>
-</div>
-
-<footer>
-  © 2025 Jogos Clássicos. Todos os direitos reservados.
-</footer>
-
-<script>
-  // Toggle FAQ
-  const faqItems = document.querySelectorAll('.faq-item h4');
-  faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const parent = item.parentElement;
-      parent.classList.toggle('active');
-    });
-  });
-</script>
-
 </body>
-
 </html>
 
 
